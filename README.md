@@ -2,9 +2,7 @@
 
 A high-performance, open-source Next.js application that serves as both a global cities JSON API and a smart, real-time search interface. Built with performance and security in mind.
 
-![Global Cities App](https://via.placeholder.com/800x400?text=Global+Cities+API+Preview)
-
-## 🚀 Features
+## Features
 
 - **Store-Backed Search**: Instant search results for thousands of cities worldwide using `country-state-city`.
 - **Strict JSON API**: dedicated `/api/all-cities` endpoint returning data in a specific `{ "Country": ["City1", "City2"] }` format.
@@ -18,7 +16,7 @@ A high-performance, open-source Next.js application that serves as both a global
   - **Debouncing**: Optimized client-side search queries.
   - **Server Actions**: Efficient data filtering on the server.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
@@ -26,7 +24,7 @@ A high-performance, open-source Next.js application that serves as both a global
 - **Icons**: [`flag-icons`](https://www.npmjs.com/package/flag-icons)
 - **Language**: TypeScript
 
-## 📦 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -37,8 +35,7 @@ A high-performance, open-source Next.js application that serves as both a global
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/world-cities.git
-   cd world-cities
+   git clone https://github.com/socrate-01/Global-Cities-API.git
    ```
 
 2. **Install dependencies:**
@@ -53,7 +50,7 @@ A high-performance, open-source Next.js application that serves as both a global
    
    Access the app at [http://localhost:3000](http://localhost:3000).
 
-## 📡 API Usage
+## API Usage
 
 ### Get All Cities
 
@@ -71,7 +68,7 @@ A high-performance, open-source Next.js application that serves as both a global
 
 **Caching:** Responses are cached with `Cache-Control: s-maxage=86400, stale-while-revalidate`.
 
-## 🛡️ Security Configuration
+## Security Configuration
 
 ### Rate Limiting
 The project uses a custom in-memory rate limiter in `middleware.ts`.
@@ -85,7 +82,7 @@ Security headers are applied globally:
 - `X-Content-Type-Options`
 - `Referrer-Policy`
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── src/
@@ -101,10 +98,10 @@ Security headers are applied globally:
 └── package.json
 ```
 
-## 📜 License
+## License
 
 This project is open-source and available under the MIT License.
 
-## 🤝 Credits
+## Credits
 
 Developed by **Seydina** and **Sanouverse**.
