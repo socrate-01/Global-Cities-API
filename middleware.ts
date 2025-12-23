@@ -59,13 +59,7 @@ export function middleware(request: NextRequest) {
     response.headers.set('X-Content-Type-Options', 'nosniff');
     response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
 
-    // CORS - Allow all origins as requested for valid API consumption, or restrict.
-    // For the API route specifically:
-    if (request.nextUrl.pathname.startsWith('/api')) {
-        response.headers.set('Access-Control-Allow-Origin', '*');
-        response.headers.set('Access-Control-Allow-Methods', 'GET, OPTIONS');
-        response.headers.set('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    }
+    // CORS logic moved to route handlers for finer control (e.g. OPTIONS)
 
     return response;
 }

@@ -68,6 +68,11 @@ A high-performance, open-source Next.js application that serves as both a global
 
 **Caching:** Responses are cached with `Cache-Control: s-maxage=86400, stale-while-revalidate`.
 
+### 🔐 Security (Important)
+
+This API is secured. You **must** provide an API Key.
+👉 [Read the Security & Setup Guide](./API_SECURITY_GUIDE.md) to learn how to set up the Environment Variable and consume the API securely.
+
 ## Security Configuration
 
 ### Rate Limiting
