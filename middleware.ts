@@ -14,7 +14,8 @@ const WINDOW_SIZE_MS = 60 * 1000; // 1 minute
 const MAX_REQUESTS = 100; // 100 requests per minute
 
 export function middleware(request: NextRequest) {
-    const ip = request.ip || '127.0.0.1'; // Fallback for localhost
+    // Fix: Access ip safely or fallback to headers
+    const ip = (request as any).ip ?? request.headers.get('x-forwarded-for') ?? '127.0.0.1';
 
     // ----------------------------------------------------------------------
     // 1. Rate Limiting (In-Memory Token Bucket / Fixed Window)
