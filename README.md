@@ -1,4 +1,4 @@
-# Global Cities API & Search Interface
+# Global Cities API & Search Interface (V1)
 
 A high-performance, open-source Next.js application that serves as both a global cities JSON API and a smart, real-time search interface. Built with performance and security in mind.
 
